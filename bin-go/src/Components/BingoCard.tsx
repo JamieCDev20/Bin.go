@@ -1,7 +1,7 @@
 import React from 'react'
 import './BingoCard.css'
 
-interface bingoProps {
+export interface bingoProps {
     title : string;
     complete? : boolean;
 }
