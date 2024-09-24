@@ -1,3 +1,27 @@
+#root{
+    --background: #232528;
+    --bingo-bg: #6981b9;
+    --bingo-bg-highlight: #a2beff;
+}
+
 .bingo-card{
-    background: blue;
+    background: var(--bingo-bg);
+    width: 130px;
+    height: 130px;
+    font-size: 23px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 3px black;
+}
+
+.bingo-card:hover, .bingo-card:active{
+    background: var(--bingo-bg-highlight);
+}
+
+.bingo-card p{
+    vertical-align: middle;
+    display: inline-block;
 }

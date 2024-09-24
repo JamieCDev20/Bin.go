@@ -9,7 +9,7 @@ interface bingoProps {
 const BingoCard = ({title, complete = false} : bingoProps) => {
   return (
     <section className={'bingo-card' + (complete? ' complete' : '')}>
-        <header>{title}</header>
+        <p>{title}</p>
     </section>
   )
 }

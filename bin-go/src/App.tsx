@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BingoCard title='Test Card'/>
+    <BingoCard title='Ben says that he is Bisexual'/>
       
   )
 }
