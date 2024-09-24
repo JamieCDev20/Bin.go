@@ -1,27 +1,57 @@
 #root{
     --background: #232528;
-    --bingo-bg: #6981b9;
+    --bingo-bg: #7198f3;
     --bingo-bg-highlight: #a2beff;
+    --bingo-bg-click: #65759c;
+    --bingo-bg-complete: #2f3850;
 }
 
 .bingo-card{
     background: var(--bingo-bg);
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 150px;
     font-size: 23px;
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0px;
     box-shadow: 2px 3px black;
 }
 
-.bingo-card:hover, .bingo-card:active{
+.bingo-card-complete {
+    background: var(--bingo-bg-complete);
+    width: 100%;
+    height: 150px;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 2px 3px black;
+}
+
+.bingo-card:hover {
     background: var(--bingo-bg-highlight);
+}
+.bingo-card:active{
+    background: var(--bingo-bg-click);
 }
 
 .bingo-card p{
-    vertical-align: middle;
-    display: inline-block;
+    vertical-align:middle;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.check {
+    display: none;
+}
+
+.check-complete {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    width: 50%
 }
