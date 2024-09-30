@@ -12,8 +12,8 @@ const BingoCard = ({ title, children }: bingoProps) => {
     const [complete, setComplete] = useState(false);
 
     const handleClick = () => {
-        if (complete) return;
-        setComplete(true);
+        // if (complete) return;
+        setComplete(!complete);
     };
 
     return (
@@ -21,8 +21,7 @@ const BingoCard = ({ title, children }: bingoProps) => {
             className={"bingo-card" + (complete ? "-complete" : "")}
             onClick={handleClick}
         >
-            <p>{title}</p>
-            {children}
+            <p>{title}{children}</p>
             <img
                 className={"check" + (complete ? "-complete" : "")}
                 src={check}

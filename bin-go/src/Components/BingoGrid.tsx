@@ -1,7 +1,7 @@
 import React from "react";
 import BingoCard, { bingoProps } from "./BingoCard";
 import "./BingoGrid.css";
-import NewCard from "./NewCard";
+// import NewCard from "./NewCard";
 
 const bingoData: bingoProps[] = [
     {
